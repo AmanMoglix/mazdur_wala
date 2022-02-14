@@ -1,0 +1,6 @@
+.home-page {
+    display: flex;
+    justify-content: left;
+    background-color: #fff;
+    /* background: url(src/assets/image/banner-bg.webp) no-repeat; */
+}

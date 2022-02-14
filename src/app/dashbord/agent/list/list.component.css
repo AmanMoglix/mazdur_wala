@@ -1,0 +1,201 @@
+.agent {
+    display: flex;
+    justify-content: left;
+    background-color: #fff;
+    margin-top: 12em;
+    /* background: url(src/assets/image/banner-bg.webp) no-repeat; */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+.customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.customers td,
+.customers th {
+    border: 1px solid #fff;
+    padding: 8px;
+}
+
+.customers tr:hover {
+    background-color: azure;
+}
+
+.customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    table thead {
+        display: none;
+    }
+    table tbody {
+        display: block;
+        width: 100%;
+        padding: 0 16px;
+    }
+    table tbody tr {
+        display: block;
+        width: 100%;
+    }
+
+    table tbody tr td::before {
+        content: attr(data-title);
+        display: block;
+        /* this is for the header color  */
+        font-size: 8px;
+        font-weight: 600;
+        color: rgb(5, 57, 94, 0.5);
+    }
+    table tbody tr {
+        margin-bottom: 16px;
+        float: left;
+        clear: both;
+        outline: var(--outline);
+        box-shadow: var(--box-shadow);
+    }
+    table tbody tr td {
+        display: block;
+        width: 50%;
+        float: left;
+        /* this is for the row color  */
+        font-size: 12px;
+        color: rgb(5, 57, 94, 1);
+        font-weight: 700;
+    }
+}
+
+/* btn custom  strart here */
+.btn-1 {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    background: #04aa6d;
+    color: #fff;
+}
+.btn-1:hover {
+    background: red;
+    color: #fff;
+}
+/* btn custom end here */
+/* media query for section */
+
+@media (min-width: 300px) {
+    html {
+        font-size: 62.5%;
+    }
+    .agent {
+        display: flex;
+        margin-top: 0;
+    }
+}
+@media (max-width: 441px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .agent {
+        display: flex;
+        margin-top: 8em;
+    }
+}
+@media (max-width: 290px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .agent {
+        display: flex;
+        margin-top: 8em;
+    }
+}
+@media (max-width: 275px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .agent {
+        display: flex;
+        margin-top: 13em;
+    }
+}
+@media (max-width: 790px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .agent {
+        display: flex;
+        margin-top: 8em;
+    }
+}
+.pagination ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.pagination ul li {
+    color: #20b2aa;
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+.pagination ul li.numb {
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+    line-height: 45px;
+    border-radius: 50%;
+}
+.pagination ul li.numb.first {
+    margin: 0px 3px 0 -5px;
+}
+.pagination ul li.numb.last {
+    margin: 0px -5px 0 3px;
+}
+.pagination ul li.dots {
+    font-size: 22px;
+    cursor: default;
+}
+.pagination ul li.btn {
+    padding: 0 20px;
+    border-radius: 50px;
+}
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover {
+    color: #fff;
+    background: #20b2aa;
+}
