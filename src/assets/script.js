@@ -147,3 +147,12 @@ function createPagination(totalPages, page){
   element.innerHTML = liTag; //add li tag inside ul tag
   return liTag; //reurn the li tag
 }
+
+/*plp page start here */
+
+
+
+ /************************************************
+     * Price Slider
+     ***********************************************/
+  
